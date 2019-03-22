@@ -1,5 +1,5 @@
 
-# O(n!)
+# O(n * n!)
 def anagrams?(str1, str2)
     anagrams_arr = str1.split('').to_a.permutation.to_a
     anagrams_arr.map! { |el| el.join('') }
@@ -7,7 +7,7 @@ def anagrams?(str1, str2)
     false
 end
 
-#O(n)
+#O(n ^ 2)
 def second_anagram?(str1, str2)
 
     str1.each_char.with_index do |char, idx|
