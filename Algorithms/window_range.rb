@@ -1,3 +1,4 @@
+# O(n ^ 2) space: O(n)
 def windowed_max_range(array, window_size)
     current_max_range = nil
     i = 0
@@ -9,3 +10,4 @@ def windowed_max_range(array, window_size)
     end
     current_max_range
 end
+
